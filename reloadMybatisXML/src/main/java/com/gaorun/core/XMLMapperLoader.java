@@ -26,7 +26,7 @@ public class XMLMapperLoader {
 
 	private SqlSessionFactory sqlSessionFactory;
 	private Resource[] mapperLocations;
-	private String packageSearchPath = "classpath:mapping/**/*.xml";
+	private String packageSearchPath = "classpath:*/db/mysql/mapping/*.xml";
 	private HashMap<String, Long> fileMapping = new HashMap<String, Long>();
 
 	public XMLMapperLoader(SqlSessionFactory sqlSessionFactory) {

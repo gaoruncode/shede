@@ -30,6 +30,10 @@ public class XMLMapperLoader {
 	private String packageSearchPath = "classpath:mapping/**/*.xml";
 	private HashMap<String, Long> fileMapping = new HashMap<String, Long>();
 
+	public XMLMapperLoader(SqlSessionFactory sqlSessionFactory) {
+		this.sqlSessionFactory = sqlSessionFactory;
+	}
+
 	public XMLMapperLoader(SqlSessionFactory sqlSessionFactory, String packageSearchPath) {
 		if (this.sqlSessionFactory == null) {
 		}

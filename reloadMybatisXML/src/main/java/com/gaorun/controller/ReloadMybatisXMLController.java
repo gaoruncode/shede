@@ -40,4 +40,9 @@ public class ReloadMybatisXMLController {
 		}
 		return "reload path is " + xmlMappingPath;
 	}
+
+	@RequestMapping(value = "/refersh")
+	public String refersh() {
+		return new XMLMapperLoader(sqlSessionFactory).readMapperXml();
+	}
 }

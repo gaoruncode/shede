@@ -1,8 +1,10 @@
 package com.gaorun.controller;
 
 import com.gaorun.core.XMLMapperLoader;
+
+import java.util.logging.LogManager;
+
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/mybatis")
 public class ReloadMybatisXMLController {
 
-	Logger log = Logger.getLogger(ReloadMybatisXMLController.class);
+	Logger log = LogManager.getLogger(ReloadMybatisXMLController.class);
 
 	@Autowired
 	private SqlSessionFactory sqlSessionFactory;

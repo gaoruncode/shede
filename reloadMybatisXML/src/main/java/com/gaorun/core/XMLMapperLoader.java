@@ -3,7 +3,6 @@ package com.gaorun.core;
 import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.log4j.Logger;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
@@ -47,7 +46,7 @@ public class XMLMapperLoader {
 
 	public void startThreadListener() {
 		ScheduledExecutorService service = Executors.newScheduledThreadPool(1);
-		//每5秒执行一次
+		//每10秒执行一次
 		service.scheduleAtFixedRate(new Runnable() {
 			@Override
 			public void run() {

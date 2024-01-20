@@ -26,6 +26,7 @@ public class XMLMapperLoader {
 
 	private SqlSessionFactory sqlSessionFactory;
 	private Resource[] mapperLocations;
+	//mybatis xml 目录
 	private String packageSearchPath = "classpath:*/db/mysql/mapping/*.xml";
 	private HashMap<String, Long> fileMapping = new HashMap<String, Long>();
 

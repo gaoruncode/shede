@@ -84,7 +84,7 @@ public class XMLMapperLoader {
 						continue;
 					}
 				}
-				System.out.println("---------------------------------------------------------------");
+				System.out.println("----------------------------------------------------------------------");
 			}
 			//			for (String name : configuration.getMappedStatementNames()) {
 			//				logger.debug(name);

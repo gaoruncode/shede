@@ -86,9 +86,7 @@ public class XMLMapperLoader {
 				}
 				System.out.println("----------------------------------------------------------------------");
 			}
-			//			for (String name : configuration.getMappedStatementNames()) {
-			//				logger.debug(name);
-			//			}
+
 			logger.warn("刷新mybatis xml配置语句成功");
 			return "刷新mybatis xml配置语句成功";
 		} catch (Exception e) {

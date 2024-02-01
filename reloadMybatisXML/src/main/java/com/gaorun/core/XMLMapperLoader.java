@@ -65,9 +65,7 @@ public class XMLMapperLoader {
 			} catch (IOException e) {
 				return "packageSearchPath扫描包路径配置错误";
 			}
-			//			for (String name : configuration.getMappedStatementNames()) {
-			//				logger.warn(name);
-			//			}
+
 			// step.2 判断是否有文件发生了变化
 			if (this.isChanged()) {
 				// step.2.1 清理
